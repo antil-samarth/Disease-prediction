@@ -1,15 +1,13 @@
-# Dataset Description
+# Data Description 
 
-We are releasing under the CC-BY licence a new large-scale dataset for Automatic Symptom Detection (ASD) and Automatic Diagnosis (AD) systems in the medical domain. The dataset contains patients synthesized using a proprietary medical knowledge base and a commercial rule-based AD system. Patients in the dataset are characterized by their socio-demographic data, a pathology they are suffering from, a set of symptoms and antecedents related to this pathology, and a differential diagnosis. The symptoms and antecedents can be binary, categorical and multi-choice, with the potential of leading to more efficient and natural interactions between ASD/AD systems and patients.  To the best of our knowledge, this is the first large-scale dataset that includes the differential diagnosis, and non-binary symptoms and antecedents.
 
-**Note**: We use evidence as a general term to refer to a symptom or an antecedent.
+
 
 This directory contains the following files:
    - **release_evidences.json**: a JSON file describing all possible evidences considered in the dataset.
    - **release_conditions.json**: a JSON file describing all pathologies considered in the dataset.
-   - **release_train_patients.zip**: a CSV file containing the patients of the training set.
-   - **release_validate_patients.zip**: a CSV file containing the patients of the validation set.
-   - **release_test_patients.zip**: a CSV file containing the patients of the test set.
+   - **dataset.csv**: a CSV file containing the patients of the dataset.
+   
 
 ## Evidence Description
 
