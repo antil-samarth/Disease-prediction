@@ -1,8 +1,5 @@
 # Data Description 
 
-
-
-
 This directory contains the following files:
    - **release_evidences.json**: a JSON file describing all possible evidences considered in the dataset.
    - **release_conditions.json**: a JSON file describing all pathologies considered in the dataset.
@@ -35,7 +32,7 @@ The file `release_conditions.json` contains information about the pathologies th
 
 ## Patient Description
 
-Each patient in each of the 3 sets has the following attributes:
+Each patient in sets has the following attributes:
    - **AGE**: the age of the synthesized patient.
    - **SEX**: the sex of the synthesized patient.
    - **PATHOLOGY**: name of the ground truth pathology (`condition_name` property in the `release_conditions.json` file) that the synthesized patient is suffering from.
@@ -46,10 +43,4 @@ Each patient in each of the 3 sets has the following attributes:
 
 # Note:
 
-We hope this dataset will encourage future works for ASD and AD systems that consider the differential diagnosis and the severity of pathologies. It is important to keep in mind that this dataset is formed of synthetic patients and is meant for research purposes. Given the assumptions made during the generation process of this dataset, we would like to emphasize that the dataset should not be used to train and deploy a model prior to performing rigorous evaluations of the model performance and verifying that the system has proper coverage and representation of the population that it will interact with.
-
-It is important to understand that the level of specificity, sensitivity and confidence that a physician will seek when evaluating a patient will be influenced by the clinical setting. The dataset was built for acute care and biased toward high mortality and morbidity pathologies. Physicians will tend to consider negative evidences as equally important in such a clinical context in order to evaluate high acuity diseases.
-
-In the creation of the DDXPlus dataset, a small subset of the diseases was chosen to establish a baseline. Medical professionals have to consider this very important point when reviewing the results of models trained with this dataset, as the differential is considerably smaller. A smaller differential means less potential evidences to collect. It is thus essential to understand this point when we look at the differential produced and the evidence collected by a model based on this dataset.
-
-For more information, please check our [paper](https://arxiv.org/abs/2205.09148).
+For more information, please check [paper](https://arxiv.org/abs/2205.09148).
